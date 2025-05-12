@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  background: linear-gradient(to bottom right, #cfd4ff, #f8f8ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+}
+
+.result-card {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Section */
+.left-panel {
+  background: linear-gradient(to bottom, #5e54e3, #3c3a9f);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  flex: 1;
+}
+
+.left-panel .your-result {
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.circle {
+  background: #4d3fd1;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.circle p {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+.left-panel h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  margin-top: 0.5rem;
+}
+
+/* Right Section */
+.right-panel {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-panel h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.summary-item img {
+  margin-right: 0.8rem;
+}
+
+/* Individual item styles */
+.reaction {
+  background: #fff6f6;
+  color: #da3a3a;
+}
+.memory {
+  background: #fffcea;
+  color: #d1b000;
+}
+.verbal {
+  background: #f1fff6;
+  color: #1f7c54;
+}
+.visual {
+  background: #eef0ff;
+  color: #4751c9;
+}
+
+.continue-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #303b59;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* Responsiveness*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+.left-panel {
+    margin-top: -12px;
+}
+  .result-card {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  
+
+  .continue-btn {
+    width: 100%;
+  }
+}
