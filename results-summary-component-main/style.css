@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 680px;
   background-color: white;
   border-radius: 25px;
   display: flex;
@@ -24,6 +24,7 @@ body {
 .result-card {
   display: flex;
   width: 100%;
+  border-radius: 30px;
 }
 
 /* Left Section */
@@ -102,6 +103,9 @@ body {
 .summary-item img {
   margin-right: 0.8rem;
 }
+#num{
+  color: black;
+}
 
 /* Individual item styles */
 .reaction {
@@ -131,6 +135,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
+
 /* Responsiveness*/
 @media (max-width: 768px) {
   .container {
